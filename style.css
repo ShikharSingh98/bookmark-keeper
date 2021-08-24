@@ -69,6 +69,81 @@ body {
   cursor: pointer;
 }
 
+.modal-container {
+  background-color: rgba(49, 49, 49, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.show-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #ffffff;
+  width: 500px;
+  max-width: 95%;
+  animation: modalopen 1s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  background-color: rgb(3, 151, 151);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 0rem 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: rgb(3, 151, 151);
+}
+
+.form-input {
+  margin-top: 1rem;
+  height: 25px;
+  outline: none;
+  border: 1.5px solid rgb(3, 151, 151);
+  border-radius: 5px;
+}
+
+form button {
+  background-color: rgb(3, 151, 151);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 1rem 2rem;
+  float: right;
+}
+
+form button:hover {
+  filter: brightness(110%);
+}
+
 @media screen and (max-width: 600px) {
   .heading {
     font-size: 3rem;
