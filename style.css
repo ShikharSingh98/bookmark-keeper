@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
   background-color: #f9f9f9;
   background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2342c1b7' fill-opacity='0.25'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
@@ -23,7 +24,6 @@ body {
   padding: 1rem 1.5rem;
   border-radius: 5px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   letter-spacing: 0.1rem;
   display: block;
@@ -34,4 +34,46 @@ body {
 
 #add-bookmark-button:hover {
   background-color: teal;
+}
+
+.bookmarks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bookmark {
+  background-color: rgba(2, 167, 173, 0.466);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin: 2rem;
+}
+
+.bookmark-info a {
+  text-decoration: none;
+  color: #264653;
+  font-weight: 600;
+  text-transform: capitalize;
+  outline: none;
+}
+
+.bookmark-info a:hover {
+  text-decoration: underline;
+}
+
+.bookmark i {
+  display: block;
+  text-align: right;
+  margin-bottom: 1rem;
+  color: #fd4a4a;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 3rem;
+  }
+  #add-bookmark-button {
+    width: 40%;
+  }
 }
